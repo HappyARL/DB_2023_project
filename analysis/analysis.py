@@ -27,8 +27,14 @@ print(data['Адрес'].nunique())
 grouped_data = data.groupby('Адрес').size().reset_index(name='counts')
 print(grouped_data)
 
+# Гистограмма распределения данных
+sns.histplot(data['Адрес'], kde=False)
+
 # Ящик с усами
 sns.boxplot(x='Адрес', y='Цена', data=data)
+
+# Диаграмма рассеяния
+sns.scatterplot(x='Адрес', y='Цена', data=data)
 
 # Круговая диаграмма
 grouped_data.plot(kind='pie', y='counts', labels=grouped_data['Адрес'], autopct='%1.1f%%')
