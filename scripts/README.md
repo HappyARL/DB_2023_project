@@ -1,6 +1,7 @@
 # SQL скрипты
 
 ---
+`kzrustelecom_CRUD.sql` - CRUD запросы и осмысленные запросы.
 
 `kzrustelecom_ddl.sql` - создание таблиц.
 
