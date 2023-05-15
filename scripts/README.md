@@ -12,4 +12,5 @@
 `kzrustelecom_inserts.sql` - первичный ввод для проверки работы таблиц.
 
 `kzrustelecom_view.sql` - представления в БД.
+
 ---
